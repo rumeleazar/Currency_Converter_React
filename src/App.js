@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import React, {useState} from "react";
+import Navigation from "./components/navbar";
+import Maincard from "./components/mainCard";
 
 function App() {
+  const [showModal, setShow] = useState(false);
+  const openModal = () => {
+    setTimeout( () => setShow(true), 500);
+    
+  };
+  
+
+  const closeModal = () => setShow(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Navigation/>
+        <Maincard openModal = {openModal} showModal = {showModal} closeModal ={closeModal} />
     </div>
   );
 }
