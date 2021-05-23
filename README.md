@@ -1,4 +1,4 @@
-# Currency_Converter_Laravel #
+# Currency_Converter_React #
 Currency converter site made with Laravel and ReactJS (for the back end, you need to clone my other repository: Currency_Converter_Laravel)
 
 
