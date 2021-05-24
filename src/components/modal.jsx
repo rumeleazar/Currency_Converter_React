@@ -12,7 +12,7 @@ export const ModalCard = ({showModal,closeModal, data}) => {
                 <br></br>
                 Rate today: 1 {data[2]} = {data[3]} USD
                 <br></br>
-                Rate %Difference(From yesterday's rate): {data[5]}
+                Rate %Difference(From yesterday's rate): {data[5]}%
             </Modal.Body>
             <Modal.Footer>
             <Button variant="secondary" onClick ={closeModal}>Close Modal</Button>
